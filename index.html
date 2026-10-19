@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#3f472c">
+  <meta name="description" content="Boda de Ana y Gabriel — 9 de octubre de 2027, Hotel Las Moras, Salta. Toda la información de la celebración y de tu estadía en Salta.">
+  <link rel="canonical" href="https://nadulog.github.io/boda-ana-y-gabriel-WEB/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Boda de Ana y Gabriel">
+  <meta property="og:url" content="https://nadulog.github.io/boda-ana-y-gabriel-WEB/">
+  <meta property="og:title" content="Ana &amp; Gabriel — Nos casamos">
+  <meta property="og:description" content="9 de octubre de 2027 · Salta, Argentina. Te esperamos para celebrar juntos.">
+  <meta property="og:image" content="https://nadulog.github.io/boda-ana-y-gabriel-WEB/assets/fotos/ag-26.jpg">
+  <meta property="og:image:alt" content="Ana y Gabriel con el cartel Save the date 9.10.27">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Ana &amp; Gabriel — 09.10.2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261019-11">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+
+  <!-- ===== Navegación ===== -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#inicio" aria-label="Volver al inicio">A<span>&amp;</span>G</a>
+    <nav class="main-nav" id="mainNav" aria-label="Secciones">
+      <a href="#celebracion">La boda</a>
+      <a href="#regalos">Regalos</a>
+      <a href="#confirmar">Confirmar</a>
+      <a href="#guia">Guía del invitado</a>
+      <a href="#salta">Qué hacer en Salta</a>
+      <a href="#solteros">Solteros</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== Portada ===== -->
+    <section class="hero" id="inicio" aria-label="Portada">
+      <div class="hero__photo">
+        <img src="assets/fotos/ag-12.jpg" alt="Gabriel besa la frente de Ana en un jardín" fetchpriority="high">
+      </div>
+      <div class="hero__panel">
+        <div class="ornate-frame">
+          <img class="deco deco--arch" src="assets/deco/flores-arco.webp" alt="" aria-hidden="true" data-pos="crown">
+          <p class="eyebrow eyebrow--light">Nos casamos</p>
+          <h1 class="hero__names">
+            <span class="script">Ana</span>
+            <span class="hero__amp">&amp;</span>
+            <span class="script">Gabriel</span>
+          </h1>
+          <p class="hero__date">09 · 10 · 2027</p>
+          <p class="hero__place">Salta · Argentina</p>
+        </div>
+        <a class="scroll-cue" href="#bienvenida" aria-label="Bajar a la bienvenida">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="lace-edge lace-edge--olive-to-cream" aria-hidden="true"></div>
+
+    <!-- ===== Bienvenida + calendario ===== -->
+    <section class="section section--cream" id="bienvenida">
+      <div class="container two-col">
+        <div class="reveal">
+          <p class="eyebrow">Bienvenidos</p>
+          <h2 class="title">Querida familia<br>y amigos</h2>
+          <p class="lead">Con muchísima alegría queremos compartir con ustedes el día en que uniremos nuestras vidas.</p>
+          <p>Armamos este espacio para que tengan, en un solo lugar, todo lo que necesitan: los datos de la celebración, dónde hospedarse, cómo moverse y qué conocer durante su estadía en Salta.</p>
+          <p class="signature">Ana Belén &amp; José Gabriel</p>
+        </div>
+        <div class="calendar-card reveal" aria-label="Calendario de octubre de 2027 con el sábado 9 marcado">
+          <img class="deco deco--sprig" src="assets/deco/flores-ramita.webp" alt="" aria-hidden="true" data-pos="card-corner" loading="lazy">
+          <p class="calendar-card__month"><span class="script">Octubre</span> 2027</p>
+          <div class="calendar" id="calendar" role="grid"></div>
+          <div class="countdown" id="countdown" role="timer" aria-label="Tiempo que falta para la boda">
+            <div><strong data-unit="days">--</strong><span>días</span></div>
+            <div><strong data-unit="hours">--</strong><span>horas</span></div>
+            <div><strong data-unit="minutes">--</strong><span>min</span></div>
+            <div><strong data-unit="seconds">--</strong><span>seg</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lace-edge lace-edge--cream-to-olive" aria-hidden="true"></div>
+
+    <!-- ===== Celebración ===== -->
+    <section class="section section--olive" id="celebracion">
+      <div class="container two-col two-col--venue">
+        <figure class="venue-art reveal">
+          <img src="assets/lugar/las-moras-acuarela.jpg" alt="Ilustración en acuarela del Hotel Las Moras" loading="lazy">
+          <img class="deco deco--garland" src="assets/deco/flores-guirnalda.webp" alt="" aria-hidden="true" data-pos="base" loading="lazy">
+        </figure>
+        <div class="reveal">
+          <p class="eyebrow eyebrow--light">Ceremonia y fiesta</p>
+          <h2 class="title title--light">La celebración</h2>
+          <ul class="facts">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+              <div><strong>Sábado 9 de octubre de 2027</strong><span>De 18:00 a 01:00 hs</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              <div><strong>Hotel Las Moras</strong><span>Juan Carlos Dávalos 725 · Salta, Argentina</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 2.5h5l-1.2 3.2h-2.6L9.5 2.5Z"/><path d="M10.7 5.7 8.6 17.6 12 21.5l3.4-3.9-2.1-11.9"/></svg>
+              <div><strong>Dress code: Formal</strong><span>Vestite elegante y cómodo para disfrutar toda la noche</span></div>
+            </li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn--cream" href="https://maps.app.goo.gl/ZRSD4LE1KSdvvwDXA?g_st=ic" target="_blank" rel="noopener">Ver en Google Maps</a>
+            <a class="btn btn--outline-light" href="https://www.waze.com/ul?q=Hotel%20Las%20Moras%20Juan%20Carlos%20D%C3%A1valos%20725%20Salta&amp;navigate=yes" target="_blank" rel="noopener">Abrir en Waze</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Galería ===== -->
+    <section class="section section--lace" id="nosotros" aria-labelledby="nosotrosTitle">
+      <div class="container">
+        <h2 class="title title--light title--center reveal" id="nosotrosTitle">Nosotros</h2>
+        <div class="polaroids" id="gallery">
+          <button class="polaroid" type="button" data-full="assets/fotos/ag-26.jpg"><img src="assets/fotos/ag-26.jpg" alt="Ana y Gabriel con el cartel Save the date" loading="lazy"></button>
+          <button class="polaroid" type="button" data-full="assets/fotos/ag-51.jpg"><img src="assets/fotos/ag-51.jpg" alt="Ana y Gabriel en la escalera del Hotel Las Moras" loading="lazy"></button>
+          <button class="polaroid" type="button" data-full="assets/fotos/img-71.jpg"><img src="assets/fotos/img-71.jpg" alt="Beso con ramo de rosas rojas" loading="lazy"></button>
+          <button class="polaroid" type="button" data-full="assets/fotos/ag-30.jpg"><img src="assets/fotos/ag-30.jpg" alt="Ana y Gabriel riendo con champagne" loading="lazy"></button>
+          <button class="polaroid" type="button" data-full="assets/fotos/img-73.jpg"><img src="assets/fotos/img-73.jpg" alt="Ana y Gabriel abrazados en blanco y negro" loading="lazy"></button>
+          <button class="polaroid" type="button" data-full="assets/fotos/img-160.jpg"><img src="assets/fotos/img-160.jpg" alt="Anillo de compromiso entre rosas rojas" loading="lazy"></button>
+          <button class="polaroid" type="button" data-full="assets/fotos/ag-56.jpg"><img src="assets/fotos/ag-56.jpg" alt="Beso detrás del cartel Nos casamos" loading="lazy"></button>
+          <button class="polaroid" type="button" data-full="assets/fotos/img-92.jpg"><img src="assets/fotos/img-92.jpg" alt="Beso bajo un arco de flores" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Regalos ===== -->
+    <section class="section section--cream" id="regalos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Regalos</p>
+          <h2 class="title title--center">Con amor</h2>
+          <p class="lead">El mejor regalo es que nos acompañen. Si además desean hacernos un obsequio, les dejamos nuestros datos.</p>
+        </div>
+        <div class="gift-grid">
+          <article class="gift-card reveal">
+            <p class="gift-card__flag">Argentina · Dólares</p>
+            <dl>
+              <div><dt>CBU</dt><dd><span>0150830511000113032831</span><button class="copy" type="button" data-copy="0150830511000113032831">Copiar</button></dd></div>
+              <div><dt>Alias</dt><dd><span>PARED.CASTOR.CAJON</span><button class="copy" type="button" data-copy="PARED.CASTOR.CAJON">Copiar</button></dd></div>
+              <div><dt>CUIL/CUIT</dt><dd><span>20375106036</span></dd></div>
+              <div><dt>Titular</dt><dd><span>José Gabriel Benci Arqued</span></dd></div>
+            </dl>
+          </article>
+          <article class="gift-card reveal">
+            <p class="gift-card__flag">Argentina · Pesos</p>
+            <dl>
+              <div><dt>Banco</dt><dd><span>Naranja X · Caja de ahorro en pesos</span></dd></div>
+              <div><dt>CBU</dt><dd><span>4530000800011526881619</span><button class="copy" type="button" data-copy="4530000800011526881619">Copiar</button></dd></div>
+              <div><dt>Alias</dt><dd><span>BEAHORROS1605</span><button class="copy" type="button" data-copy="BEAHORROS1605">Copiar</button></dd></div>
+              <div><dt>N.º de cuenta</dt><dd><span>1152688161</span></dd></div>
+              <div><dt>CUIL</dt><dd><span>27961996533</span></dd></div>
+              <div><dt>Titular</dt><dd><span>Ana Belén Echeverría Cedeño</span></dd></div>
+            </dl>
+          </article>
+          <article class="gift-card reveal">
+            <p class="gift-card__flag">Ecuador · Dólares</p>
+            <dl>
+              <div><dt>Banco</dt><dd><span>Banco Bolivariano · Cuenta de ahorros</span></dd></div>
+              <div><dt>N.º de cuenta</dt><dd><span>0841069485</span><button class="copy" type="button" data-copy="0841069485">Copiar</button></dd></div>
+              <div><dt>CI</dt><dd><span>1718585811</span></dd></div>
+              <div><dt>Titular</dt><dd><span>Ana Echeverría</span></dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="lace-edge lace-edge--cream-to-olive" aria-hidden="true"></div>
+
+    <!-- ===== Confirmación ===== -->
+    <section class="section section--olive section--rsvp" id="confirmar">
+      <div class="container narrow reveal">
+        <img class="deco deco--garland" src="assets/deco/flores-guirnalda.webp" alt="" aria-hidden="true" data-pos="rsvp" loading="lazy">
+        <p class="eyebrow eyebrow--light">Confirmación</p>
+        <h2 class="title title--light title--center">¿Nos acompañás?</h2>
+        <p class="lead lead--light">Por favor, confirmá tu asistencia antes de <strong>abril de 2027</strong>.</p>
+        <a class="btn btn--cream btn--lg" id="rsvpButton" href="https://bloomdate-rsvp.netlify.app" target="_blank" rel="noopener">Confirmar asistencia</a>
+      </div>
+    </section>
+
+    <div class="lace-edge lace-edge--olive-to-cream" aria-hidden="true"></div>
+
+    <!-- ===== Guía del invitado ===== -->
+    <section class="section section--cream" id="guia">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Guía del invitado</p>
+          <h2 class="title title--center">Tu estadía en Salta</h2>
+          <p class="lead">Les compartimos nuestros contactos de confianza para que su viaje sea tan lindo como la fiesta.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Categorías de la guía" id="guideTabs"></div>
+        <div class="guide-panels" id="guidePanels"></div>
+      </div>
+    </section>
+
+    <!-- ===== Qué hacer en Salta ===== -->
+    <section class="salta-hero" id="salta">
+      <img src="assets/salta/cafayate-1.jpg" alt="" loading="lazy">
+      <div class="salta-hero__inner reveal">
+        <p class="eyebrow eyebrow--light">Qué hacer en Salta</p>
+        <h2 class="title title--light title--center">Descubrí Salta<br>y sus paisajes</h2>
+        <p class="lead lead--light">Durante su estadía los invitamos a conocer algunos de los paisajes y experiencias más increíbles del Norte Argentino: cerros multicolores, pueblos históricos, grandes salares y aventura en plena naturaleza. Hay una excursión para cada estilo de viajero.</p>
+        <a class="btn btn--cream" href="https://maps.app.goo.gl/Z5FpEFjsCBWNWvhf6" target="_blank" rel="noopener">Explorá Salta en Google Maps</a>
+      </div>
+    </section>
+
+    <section class="section section--cream section--tight-top">
+      <div class="container">
+        <div class="excursions" id="excursions"></div>
+
+        <article class="agency reveal">
+          <div class="agency__main">
+            <p class="eyebrow">¿Querés reservar alguna experiencia?</p>
+            <h3 class="agency__name">Joluar Viajes</h3>
+            <p class="agency__tag">Tu próximo viaje empieza con confianza</p>
+            <p>Pueden asesorarte y ayudarte a organizar cualquiera de estas excursiones para que disfrutes Salta y sus alrededores.</p>
+            <div class="btn-row">
+              <a class="btn btn--olive" href="https://wa.me/5493876000257" target="_blank" rel="noopener">WhatsApp +54 9 387 6000 257</a>
+              <a class="btn btn--outline" href="mailto:info@joluarviajes.tur.ar">info@joluarviajes.tur.ar</a>
+            </div>
+            <p class="small-note">Los precios de las excursiones se informarán y actualizarán a medida que se acerque la fecha del viaje. Consultá disponibilidad, tarifas y opciones de reserva.</p>
+          </div>
+          <div class="agency__others">
+            <p class="eyebrow">Otras agencias de viaje</p>
+            <a class="contact-line" href="https://wa.me/5493874766695" target="_blank" rel="noopener"><strong>Norte Viajes</strong><span>+54 9 387 476 6695</span></a>
+            <a class="contact-line" href="https://wa.me/5493875505609" target="_blank" rel="noopener"><strong>Wevoy</strong><span>+54 9 387 550 5609</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="lace-edge lace-edge--cream-to-olive" aria-hidden="true"></div>
+
+    <!-- ===== Solteros ===== -->
+    <section class="section section--olive section--singles" id="solteros">
+      <div class="container two-col two-col--singles">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--light">Match en la boda</p>
+          <h2 class="title title--light">Solteros<br>&amp; solteras</h2>
+          <p class="lead lead--light">¿Venís sin pareja? Quién sabe… ¡tal vez la próxima boda sea la tuya!</p>
+          <p class="on-olive">Subí tu foto, contá algo de vos y dejá tu Instagram. Deslizá a la derecha si alguien te gusta para ver su perfil, o a la izquierda para seguir mirando.</p>
+          <div class="btn-row">
+            <button class="btn btn--cream" type="button" id="openSinglesForm">Quiero sumarme</button>
+          </div>
+          <div class="singles-filter" role="radiogroup" aria-label="Mostrar perfiles">
+            <span>Mostrame:</span>
+            <button type="button" role="radio" aria-checked="true" data-filter="todos">Todos</button>
+            <button type="button" role="radio" aria-checked="false" data-filter="mujer">Mujeres</button>
+            <button type="button" role="radio" aria-checked="false" data-filter="hombre">Hombres</button>
+          </div>
+        </div>
+        <div class="deck-wrap reveal">
+          <div class="deck" id="deck" aria-live="polite"></div>
+          <div class="deck-actions">
+            <button class="deck-btn deck-btn--pass" type="button" id="passBtn" aria-label="Pasar">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+            <button class="deck-btn deck-btn--like" type="button" id="likeBtn" aria-label="Me gusta">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.6 4.2 13C-.7 8.3 6.4 1.1 11 5.6l1 1 1-1c4.6-4.5 11.7 2.7 6.8 7.4L12 20.6Z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lace-edge lace-edge--olive-to-cream" aria-hidden="true"></div>
+
+    <!-- ===== Cierre ===== -->
+    <section class="section section--cream closing" id="cierre">
+      <div class="container two-col">
+        <figure class="closing__photo reveal">
+          <img src="assets/fotos/ag-46.jpg" alt="Ana y Gabriel frente al Hotel Las Moras" loading="lazy">
+          <img class="deco deco--garland" src="assets/deco/flores-guirnalda.webp" alt="" aria-hidden="true" data-pos="base" loading="lazy">
+        </figure>
+        <div class="closing__text reveal">
+          <h2 class="title title--center">¡Los esperamos!</h2>
+          <p class="lead">Gracias por ser parte de nuestra historia.</p>
+          <p class="closing__names"><span class="script">Ana &amp; Gabriel</span></p>
+          <p class="closing__date">09 · 10 · 2027</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="plain-footer">
+      <p class="footer-credit">Hecho con <span class="footer-love">amor
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.6 4.2 13C-.7 8.3 6.4 1.1 11 5.6l1 1 1-1c4.6-4.5 11.7 2.7 6.8 7.4L12 20.6Z"/></svg>
+      </span> por <strong>Bloomdate</strong></p>
+      <div class="footer-icons" aria-label="Canales de Bloomdate">
+        <a href="https://wa.me/541140436324" target="_blank" rel="noopener" aria-label="Contactar a Bloomdate por WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icoWhatsapp"/></svg>
+        </a>
+        <a href="https://www.instagram.com/bloomdate.invitaciones/" target="_blank" rel="noopener" aria-label="Visitar Bloomdate en Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="stroke"><use href="#icoInstagram"/></svg>
+        </a>
+        <a href="https://bloomdate-site.netlify.app/" target="_blank" rel="noopener" aria-label="Visitar el sitio web de Bloomdate">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="stroke"><use href="#icoGlobe"/></svg>
+        </a>
+      </div>
+      <p>Todos los derechos reservados</p>
+    </footer>
+  </main>
+
+  <!-- ===== Lightbox de fotos ===== -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" type="button" aria-label="Cerrar foto">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Foto anterior">‹</button>
+    <img alt="">
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Foto siguiente">›</button>
+  </div>
+
+  <!-- ===== Formulario de solteros ===== -->
+  <div class="modal" id="singlesModal" role="dialog" aria-modal="true" aria-labelledby="singlesModalTitle" hidden>
+    <div class="modal__panel">
+      <button class="modal__close" type="button" data-close aria-label="Cerrar">×</button>
+      <p class="eyebrow">Match en la boda</p>
+      <h3 class="modal__title" id="singlesModalTitle">Sumate a la lista</h3>
+      <form id="singlesForm" novalidate>
+        <label class="photo-pick">
+          <input type="file" name="foto" accept="image/*" required>
+          <span class="photo-pick__preview" id="photoPreview"><span>Subí tu mejor foto</span></span>
+        </label>
+        <div class="form-row">
+          <label>Nombre<input type="text" name="nombre" maxlength="40" required autocomplete="given-name"></label>
+          <label class="form-age">Edad<input type="number" name="edad" min="18" max="99" required inputmode="numeric"></label>
+        </div>
+        <fieldset class="chips">
+          <legend>Soy</legend>
+          <label><input type="radio" name="genero" value="mujer" required><span>Mujer</span></label>
+          <label><input type="radio" name="genero" value="hombre"><span>Hombre</span></label>
+          <label><input type="radio" name="genero" value="otro"><span>Otro</span></label>
+        </fieldset>
+        <label>Contá algo de vos<textarea name="descripcion" maxlength="220" rows="3" required placeholder="Ej.: Amigo del novio, fanático del vino de Cafayate y de bailar hasta el final."></textarea></label>
+        <label>Instagram<input type="text" name="instagram" maxlength="40" required placeholder="@tuusuario" autocapitalize="off" autocomplete="off"></label>
+        <label class="consent"><input type="checkbox" name="consent" required><span>Acepto que mi foto, nombre, descripción e Instagram sean visibles para los invitados de la boda.</span></label>
+        <p class="form-msg" id="singlesMsg" role="status"></p>
+        <button class="btn btn--olive btn--block" type="submit">Publicar mi perfil</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ===== Símbolos SVG ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="icoWhatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.2-3.5-8.4Zm-8.4 18.2c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.9 1 1-3.8-.2-.4a9.8 9.8 0 1 1 8.6 4.8Zm5.4-7.3c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.7 0 1.6 1.2 3.1 1.3 3.3.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.2-.2-.5-.3-.8-.4Z"/></symbol>
+    <symbol id="icoInstagram" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.6" cy="6.5" r="1.15" fill="currentColor"/></symbol>
+    <symbol id="icoGlobe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.5"/><path d="M2.8 12h18.4M12 2.5c2.4 2.6 3.7 5.8 3.7 9.5S14.4 18.9 12 21.5M12 2.5C9.6 5.1 8.3 8.3 8.3 12s1.3 6.9 3.7 9.5"/></g></symbol>
+    <symbol id="icoPin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  </svg>
+
+  <script src="assets/solteros-config.js?v=20261019-1"></script>
+  <script src="script.js?v=20261019-1"></script>
+  <script src="solteros.js?v=20261019-1"></script>
+</body>
+</html>

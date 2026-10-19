@@ -193,7 +193,7 @@
         <p class="eyebrow eyebrow--light">Confirmación</p>
         <h2 class="title title--light title--center">¿Nos acompañás?</h2>
         <p class="lead lead--light">Por favor, confirmá tu asistencia antes de <strong>abril de 2027</strong>.</p>
-        <a class="btn btn--cream btn--lg" id="rsvpButton" href="https://bloomdate-rsvp.netlify.app" target="_blank" rel="noopener">Confirmar asistencia</a>
+        <a class="btn btn--cream btn--lg" id="rsvpButton" href="https://bloomdate-rsvp.netlify.app/r/boda-ana-y-gabriel" target="_blank" rel="noopener">Confirmar asistencia</a>
       </div>
     </section>
 
@@ -368,7 +368,18 @@
   </svg>
 
   <script src="assets/solteros-config.js?v=20261019-1"></script>
-  <script src="script.js?v=20261019-1"></script>
+  <script src="script.js?v=20261019-2"></script>
   <script src="solteros.js?v=20261019-1"></script>
+  <script>
+    (function () {
+      var token = new URLSearchParams(window.location.search).get('invite');
+      if (!token) return;
+      document.querySelectorAll('a[href*="/r/"]').forEach(function (a) {
+        var url = new URL(a.href);
+        url.searchParams.set('invite', token);
+        a.href = url.toString();
+      });
+    })();
+  </script>
 </body>
 </html>

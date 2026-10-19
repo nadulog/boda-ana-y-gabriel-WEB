@@ -299,13 +299,6 @@
     });
   })();
 
-  /* ---------- RSVP: reenviar ?invite= si viene en la URL ---------- */
-  (function () {
-    var token = new URLSearchParams(location.search).get("invite");
-    var btn = document.getElementById("rsvpButton");
-    if (token && btn) btn.href = btn.href.replace(/\/?$/, "") + "?invite=" + encodeURIComponent(token);
-  })();
-
   /* ---------- Animaciones de entrada ---------- */
   var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && !/[?&]shot\b/.test(location.search)) {

@@ -245,13 +245,6 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .hero__date { font-family: var(--serif); font-size: 1.55rem; letter-spacing: .18em; margin: 0 0 .2rem; }
 .hero__place { font-size: .74rem; letter-spacing: .34em; text-transform: uppercase; color: var(--on-olive-muted); margin: 0; }
 
-.scroll-cue {
-  display: grid; place-items: center; width: 42px; height: 42px; margin-top: 26px;
-  border: 1px solid rgba(239, 233, 214, .4); border-radius: 50%; color: var(--on-olive);
-  animation: bob 2.4s ease-in-out infinite;
-}
-.scroll-cue svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; }
-@keyframes bob { 50% { transform: translateY(5px); } }
 
 @media (max-width: 899px) {
   .hero__photo { height: 68svh; min-height: 420px; }
@@ -519,7 +512,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .no-js .reveal { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
-  .calendar .day--wedding::before, .scroll-cue { animation: none; }
+  .calendar .day--wedding::before { animation: none; }
 }
 
 /* Celebración y Nosotros comparten el verde: evita la línea de unión */

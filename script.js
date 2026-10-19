@@ -33,6 +33,39 @@
     comb: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16v3H4zM6 12v7M9 12v7M12 12v7M15 12v7M18 12v7"/></svg>'
   };
 
+  /* ---------- Música de fondo ---------- */
+  var invitationAudio = document.getElementById("invitationAudio");
+  var audioToggle = document.getElementById("audioToggle");
+  invitationAudio.volume = 0.55;
+
+  function syncAudioButton() {
+    var isPlaying = !invitationAudio.paused;
+    audioToggle.classList.toggle("is-playing", isPlaying);
+    audioToggle.setAttribute("aria-pressed", String(isPlaying));
+    audioToggle.setAttribute("aria-label", isPlaying ? "Pausar música" : "Reproducir música");
+  }
+  var userControlledAudio = false;
+  audioToggle.addEventListener("click", function () {
+    userControlledAudio = true;
+    if (!invitationAudio.paused) { invitationAudio.pause(); return; }
+    invitationAudio.play().catch(syncAudioButton);
+  });
+  invitationAudio.addEventListener("play", syncAudioButton);
+  invitationAudio.addEventListener("pause", syncAudioButton);
+
+  // Arranque automático: se intenta al empezar a scrollear; si el navegador lo bloquea
+  // (el scroll no cuenta como permiso), arranca con el primer toque o clic en la página.
+  var AUTOSTART_EVENTS = ["scroll", "wheel", "pointerdown", "touchend", "click", "keydown"];
+  function autoStartAudio(e) {
+    if (userControlledAudio || (e.target && e.target.closest && e.target.closest("#audioToggle"))) return;
+    if (!invitationAudio.paused) return stopAutoStart();
+    invitationAudio.play().then(stopAutoStart, function () { /* bloqueado: esperar al próximo toque */ });
+  }
+  function stopAutoStart() {
+    AUTOSTART_EVENTS.forEach(function (type) { window.removeEventListener(type, autoStartAudio, true); });
+  }
+  AUTOSTART_EVENTS.forEach(function (type) { window.addEventListener(type, autoStartAudio, { capture: true, passive: true }); });
+
   /* ---------- Navegación ---------- */
   var header = document.getElementById("siteHeader");
   var toggle = document.getElementById("navToggle");

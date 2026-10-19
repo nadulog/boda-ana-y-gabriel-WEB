@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261019-20">
+  <link rel="stylesheet" href="styles.css?v=20261019-21">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Ir al contenido</a>
@@ -301,6 +301,15 @@
     </footer>
   </main>
 
+  <button class="audio-toggle" id="audioToggle" type="button" aria-label="Reproducir música" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path class="audio-speaker" d="M4 10v4h3l4 3V7l-4 3H4Z"/>
+      <path class="audio-waves" d="M14.5 9.2a4 4 0 0 1 0 5.6M17 6.8a7.3 7.3 0 0 1 0 10.4"/>
+      <path class="audio-muted" d="m15.2 9 5 6M20.2 9l-5 6"/>
+    </svg>
+  </button>
+  <audio id="invitationAudio" src="assets/audio/musica.mp3" loop preload="metadata"></audio>
+
   <!-- ===== Lightbox de fotos ===== -->
   <div class="lightbox" id="lightbox" hidden>
     <button class="lightbox__close" type="button" aria-label="Cerrar foto">×</button>
@@ -321,7 +330,7 @@
     <symbol id="icoPin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
   </svg>
 
-  <script src="script.js?v=20261019-3"></script>
+  <script src="script.js?v=20261019-5"></script>
   <script>
     (function () {
       var token = new URLSearchParams(window.location.search).get('invite');

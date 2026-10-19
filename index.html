@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261019-11">
+  <link rel="stylesheet" href="styles.css?v=20261019-15">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Ir al contenido</a>
@@ -38,7 +38,6 @@
       <a href="#confirmar">Confirmar</a>
       <a href="#guia">Guía del invitado</a>
       <a href="#salta">Qué hacer en Salta</a>
-      <a href="#solteros">Solteros</a>
     </nav>
     <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
       <span></span><span></span><span></span>
@@ -102,7 +101,7 @@
     <section class="section section--olive" id="celebracion">
       <div class="container two-col two-col--venue">
         <figure class="venue-art reveal">
-          <img src="assets/lugar/las-moras-acuarela.jpg" alt="Ilustración en acuarela del Hotel Las Moras" loading="lazy">
+          <img src="assets/lugar/las-moras-jardin.jpg" alt="Jardín y fachada blanca del Hotel Las Moras" loading="lazy">
           <img class="deco deco--garland" src="assets/deco/flores-guirnalda.webp" alt="" aria-hidden="true" data-pos="base" loading="lazy">
         </figure>
         <div class="reveal">
@@ -219,7 +218,8 @@
 
     <!-- ===== Qué hacer en Salta ===== -->
     <section class="salta-hero" id="salta">
-      <img src="assets/salta/cafayate-1.jpg" alt="" loading="lazy">
+      <img src="assets/salta/salta-fondo.jpg" alt="" loading="lazy">
+      <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Quebrada_de_las_Conchas,_Comuna_de_Cafayate,_provincia_de_Salta,_Argentina.JPG" target="_blank" rel="noopener">Foto: Bachelot Pierre J-P · CC BY-SA 3.0</a>
       <div class="salta-hero__inner reveal">
         <p class="eyebrow eyebrow--light">Qué hacer en Salta</p>
         <h2 class="title title--light title--center">Descubrí Salta<br>y sus paisajes</h2>
@@ -252,42 +252,6 @@
         </article>
       </div>
     </section>
-
-    <div class="lace-edge lace-edge--cream-to-olive" aria-hidden="true"></div>
-
-    <!-- ===== Solteros ===== -->
-    <section class="section section--olive section--singles" id="solteros">
-      <div class="container two-col two-col--singles">
-        <div class="reveal">
-          <p class="eyebrow eyebrow--light">Match en la boda</p>
-          <h2 class="title title--light">Solteros<br>&amp; solteras</h2>
-          <p class="lead lead--light">¿Venís sin pareja? Quién sabe… ¡tal vez la próxima boda sea la tuya!</p>
-          <p class="on-olive">Subí tu foto, contá algo de vos y dejá tu Instagram. Deslizá a la derecha si alguien te gusta para ver su perfil, o a la izquierda para seguir mirando.</p>
-          <div class="btn-row">
-            <button class="btn btn--cream" type="button" id="openSinglesForm">Quiero sumarme</button>
-          </div>
-          <div class="singles-filter" role="radiogroup" aria-label="Mostrar perfiles">
-            <span>Mostrame:</span>
-            <button type="button" role="radio" aria-checked="true" data-filter="todos">Todos</button>
-            <button type="button" role="radio" aria-checked="false" data-filter="mujer">Mujeres</button>
-            <button type="button" role="radio" aria-checked="false" data-filter="hombre">Hombres</button>
-          </div>
-        </div>
-        <div class="deck-wrap reveal">
-          <div class="deck" id="deck" aria-live="polite"></div>
-          <div class="deck-actions">
-            <button class="deck-btn deck-btn--pass" type="button" id="passBtn" aria-label="Pasar">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
-            </button>
-            <button class="deck-btn deck-btn--like" type="button" id="likeBtn" aria-label="Me gusta">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.6 4.2 13C-.7 8.3 6.4 1.1 11 5.6l1 1 1-1c4.6-4.5 11.7 2.7 6.8 7.4L12 20.6Z"/></svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="lace-edge lace-edge--olive-to-cream" aria-hidden="true"></div>
 
     <!-- ===== Cierre ===== -->
     <section class="section section--cream closing" id="cierre">
@@ -332,35 +296,6 @@
     <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Foto siguiente">›</button>
   </div>
 
-  <!-- ===== Formulario de solteros ===== -->
-  <div class="modal" id="singlesModal" role="dialog" aria-modal="true" aria-labelledby="singlesModalTitle" hidden>
-    <div class="modal__panel">
-      <button class="modal__close" type="button" data-close aria-label="Cerrar">×</button>
-      <p class="eyebrow">Match en la boda</p>
-      <h3 class="modal__title" id="singlesModalTitle">Sumate a la lista</h3>
-      <form id="singlesForm" novalidate>
-        <label class="photo-pick">
-          <input type="file" name="foto" accept="image/*" required>
-          <span class="photo-pick__preview" id="photoPreview"><span>Subí tu mejor foto</span></span>
-        </label>
-        <div class="form-row">
-          <label>Nombre<input type="text" name="nombre" maxlength="40" required autocomplete="given-name"></label>
-          <label class="form-age">Edad<input type="number" name="edad" min="18" max="99" required inputmode="numeric"></label>
-        </div>
-        <fieldset class="chips">
-          <legend>Soy</legend>
-          <label><input type="radio" name="genero" value="mujer" required><span>Mujer</span></label>
-          <label><input type="radio" name="genero" value="hombre"><span>Hombre</span></label>
-          <label><input type="radio" name="genero" value="otro"><span>Otro</span></label>
-        </fieldset>
-        <label>Contá algo de vos<textarea name="descripcion" maxlength="220" rows="3" required placeholder="Ej.: Amigo del novio, fanático del vino de Cafayate y de bailar hasta el final."></textarea></label>
-        <label>Instagram<input type="text" name="instagram" maxlength="40" required placeholder="@tuusuario" autocapitalize="off" autocomplete="off"></label>
-        <label class="consent"><input type="checkbox" name="consent" required><span>Acepto que mi foto, nombre, descripción e Instagram sean visibles para los invitados de la boda.</span></label>
-        <p class="form-msg" id="singlesMsg" role="status"></p>
-        <button class="btn btn--olive btn--block" type="submit">Publicar mi perfil</button>
-      </form>
-    </div>
-  </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -372,9 +307,7 @@
     <symbol id="icoPin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
   </svg>
 
-  <script src="assets/solteros-config.js?v=20261019-1"></script>
   <script src="script.js?v=20261019-2"></script>
-  <script src="solteros.js?v=20261019-1"></script>
   <script>
     (function () {
       var token = new URLSearchParams(window.location.search).get('invite');

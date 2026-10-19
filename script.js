@@ -264,7 +264,7 @@
     var wrap = document.getElementById("excursions");
     EXCURSIONS.forEach(function (x) {
       var imgs = [1, 2, 3].map(function (n) {
-        return '<img src="assets/salta/' + x.slug + "-" + n + '.jpg" alt="' + x.title + ", foto " + n + '" loading="lazy">';
+        return '<img src="assets/salta/' + x.slug + "-" + n + '.jpg?v=2" alt="' + x.title + ", foto " + n + '" loading="lazy">';
       }).join("");
       var dots = [0, 1, 2].map(function (n) {
         return '<button type="button" aria-label="Ver foto ' + (n + 1) + '"' + (n === 0 ? ' aria-current="true"' : "") + "></button>";

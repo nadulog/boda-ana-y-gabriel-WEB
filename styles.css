@@ -525,19 +525,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 /* Celebración y Nosotros comparten el verde: evita la línea de unión */
 .section--olive + .section--lace { margin-top: -1px; }
 
-/* Crédito de la foto de fondo (licencia CC BY-SA) */
-.photo-credit {
-  position: absolute; right: 10px; bottom: 8px; z-index: 1;
-  font-size: .62rem; letter-spacing: .04em; color: rgba(239, 233, 214, .6); text-decoration: none;
-}
-.photo-credit:hover { color: var(--on-olive); }
 
 /* Dos secciones crema seguidas (agencias → cierre): sin doble espacio */
 .section--cream + .section--cream { padding-top: 0; }
 
-/* Créditos de las fotos de Salta (licencias CC) */
-.photo-credits { margin-top: 28px; font-size: .78rem; color: var(--muted); }
-.photo-credits summary { cursor: pointer; letter-spacing: .14em; text-transform: uppercase; font-size: .68rem; font-weight: 500; color: var(--olive-soft); }
-.photo-credits p { margin: 10px 0 6px; }
-.photo-credits ul { margin: 0; padding-left: 18px; line-height: 1.7; }
-.photo-credits a { color: inherit; }

@@ -417,9 +417,11 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 /* ---------- Qué hacer en Salta ---------- */
 .salta-hero { position: relative; min-height: 78svh; display: grid; place-items: center; overflow: hidden; color: var(--on-olive); }
 .salta-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.salta-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28, 31, 19, .32), rgba(28, 31, 19, .62)); }
+.salta-hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 55% at 50% 50%, rgba(24, 27, 16, .62), rgba(24, 27, 16, .18) 100%), linear-gradient(180deg, rgba(24, 27, 16, .2), rgba(24, 27, 16, .5)); }
 .salta-hero__inner { position: relative; z-index: 1; width: min(720px, 100% - 40px); text-align: center; padding: 90px 0; display: grid; justify-items: center; }
 .salta-hero .lead { font-size: clamp(1.1rem, 2vw, 1.3rem); }
+.salta-hero__inner .eyebrow { color: var(--on-olive); }
+.salta-hero__inner .title, .salta-hero__inner .lead, .salta-hero__inner .eyebrow { text-shadow: 0 2px 14px rgba(0, 0, 0, .55), 0 1px 3px rgba(0, 0, 0, .4); }
 
 .excursions { display: grid; gap: 28px; counter-reset: exc; }
 @media (min-width: 680px) { .excursions { grid-template-columns: repeat(2, 1fr); } }
@@ -522,3 +524,20 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 /* Dos secciones crema seguidas (agencias → cierre): sin doble espacio */
 .section--cream + .section--cream { padding-top: 0; }
 
+
+/* ---------- Música (playlist colaborativa) ---------- */
+.music-card {
+  display: grid; justify-items: center; text-align: center;
+  max-width: 760px; margin: 0 auto;
+  background: var(--olive); color: var(--on-olive);
+  border-radius: 220px 220px var(--radius) var(--radius);
+  padding: clamp(70px, 9vw, 96px) clamp(22px, 5vw, 60px) clamp(40px, 5vw, 56px);
+  box-shadow: var(--shadow); position: relative;
+}
+.music-card::before {
+  content: ""; position: absolute; inset: 9px; pointer-events: none;
+  border: 1px solid rgba(239, 233, 214, .3); border-radius: 212px 212px 8px 8px;
+}
+.music-card__icon { width: 38px; height: 38px; fill: none; stroke: var(--sage); stroke-width: 1.4; margin-bottom: 14px; }
+.music-card .lead { max-width: 520px; margin-bottom: 1.6rem; }
+.music-card .btn svg { width: 20px; height: 20px; color: #1db954; }
